@@ -12,7 +12,7 @@ git log -n 4
 
 # mostrar um arquivo de log contendo os ultimos commits
 # mostrará todos os commits posteriores ao commit referente a este ID
-# você pode deletar algums commits, se desejar (e realizar um git -f push, executando o git rebase --continue antes, é claro)
+# você pode deletar algums commits, se desejar (e realizar um git push -f, executando o git rebase --continue antes, é claro)
 git rebase -i <commit ID>
 
 # confirmar o git rebase
