@@ -1,0 +1,19 @@
+# iniciar repositório git dentro de um projeto
+git init
+
+# setar repositorio remoto para um projeto
+git remote add origin <remote address>
+
+# setar comportamento padrão do comando push
+git push --set-upstream origin master
+
+# listar os útimos commits do repositório (no caso os últimos 4)
+git log -n 4
+
+# mostrar um arquivo de log contendo os ultimos commits
+# mostrará todos os commits posteriores ao commit referente a este ID
+# você pode deletar algums commits, se desejar (e realizar um git -f push, executando o git rebase --continue antes, é claro)
+git rebase -i <commit ID>
+
+# confirmar o git rebase
+git rebase --continue
